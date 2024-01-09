@@ -18,14 +18,14 @@
 ![Alt text](https://i.ibb.co/HpSJg0y/THEME-VUNG-EPISODE.png "Episode Page")
 
 ## Requirements
-https://github.com/hacoidev/ophim-core
+https://github.com/devcuongnguyen/ophim-core
 
 ## Install
-1. Tại thư mục của Project: `composer require ophimcms/theme-vung`
+1. Tại thư mục của Project: `composer require devcuongnguyen/theme-vung`
 2. Kích hoạt giao diện trong Admin Panel
 
 ## Update
-1. Tại thư mục của Project: `composer update ophimcms/theme-vung`
+1. Tại thư mục của Project: `composer update devcuongnguyen/theme-vung`
 2. Re-Activate giao diện trong Admin Panel
 
 ## Note
@@ -56,5 +56,5 @@ https://github.com/hacoidev/ophim-core
 
 
 ### Custom View Blade
-- File blade gốc trong Package: `/vendor/ophimcms/theme-vung/resources/views/themevung`
+- File blade gốc trong Package: `/vendor/devcuongnguyen/theme-vung/resources/views/themevung`
 - Copy file cần custom đến: `/resources/views/vendor/themes/themevung`

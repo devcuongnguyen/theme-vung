@@ -26,7 +26,7 @@ class ThemeVungServiceProvider extends ServiceProvider
             'vung' => [
                 'name' => 'Vung',
                 'author' => 'opdlnf01@gmail.com',
-                'package_name' => 'ophimcms/theme-vung',
+                'package_name' => 'devcuongnguyen/theme-vung',
                 'publishes' => ['vung-assets'],
                 'preview_image' => '',
                 'options' => [
@@ -151,7 +151,7 @@ class ThemeVungServiceProvider extends ServiceProvider
                                     <a href="#">Liên hệ Quảng Cáo</a>
                                 </li>
                                 </ul>
-                                <div>Copyright ©2022 OPhimCMS.</div>
+                                <div>Copyright ©2022 devcuongnguyen.</div>
                             </div>
                         </footer>
                         EOT,
