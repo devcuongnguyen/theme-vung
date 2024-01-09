@@ -80,7 +80,7 @@
             <span class="text-success">{{ $server }}</span>
             <div class="episode-main">
                 <ul>
-                    @foreach ($data->sortByDesc('name', SORT_NATURAL)->groupBy('name') as $name => $item)
+                    @foreach ($data->sortBy('name')->groupBy('name') as $name => $item)
                         <li>
                             <a href="{{ $item->sortByDesc('type')->first()->getUrl() }}"
                                 title="Xem phim {{ $currentMovie->name }} {{ $name }}"
