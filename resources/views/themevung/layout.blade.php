@@ -39,6 +39,7 @@
 @push('header')
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('/themes/vung/css/v.min.css') }}" as="style" rel="preload" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/themes/vung/css/custom.css') }}" as="style" rel="preload" />
 @endpush
 
 @section('body')

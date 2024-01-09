@@ -102,11 +102,11 @@
         </a>
     </div>
     <div class="group-detail ">
-        <div class="imdb">Điểm {{$currentMovie->getRatingStar()}}</div>
+        <div class="imdb">Điểm {{ $currentMovie->getRatingStar() }}</div>
         <ul class="rated-star hidden-xs">
             <i id="star"></i>
         </ul>
-        <span class="rated-text">({{$currentMovie->getRatingCount()}} Đánh giá)</span>
+        <span class="rated-text">({{ $currentMovie->getRatingCount() }} Đánh giá)</span>
     </div>
 
     <div class="group-vote-detail">
@@ -145,7 +145,8 @@
                 <div class="modal-body" id="p_content">
                     <p class="alert-danger" id="show_msg"></p>
                     <div class="form-group">
-                        <label for="log_des">Báo lỗi phim "{{ $currentMovie->name }} ({{ $currentMovie->origin_name }}) ({{ $currentMovie->publish_year }})"</label>
+                        <label for="log_des">Báo lỗi phim "{{ $currentMovie->name }} ({{ $currentMovie->origin_name }})
+                            ({{ $currentMovie->publish_year }})"</label>
                         <textarea name="log_des" id="log_des" class="form-control" style="width:100%; height: 50px;"
                             placeholder="Mô tả lỗi phim {{ $currentMovie->name }} ({{ $currentMovie->origin_name }}) ({{ $currentMovie->publish_year }})"></textarea>
                     </div>
@@ -156,9 +157,10 @@
     </div>
 
     <script>
-        var rating = '{{$currentMovie->getRatingStar()}}';
+        var rating = '{{ $currentMovie->getRatingStar() }}';
         var URL_POST_RATING = '{{ route('movie.rating', ['movie' => $currentMovie->slug]) }}';
-        var URL_POST_REPORT = '{{ route('episodes.report', ['movie' => $currentMovie->slug, 'episode' => $episode->slug, 'id' => $episode->id]) }}';
+        var URL_POST_REPORT =
+            '{{ route('episodes.report', ['movie' => $currentMovie->slug, 'episode' => $episode->slug, 'id' => $episode->id]) }}';
     </script>
     <script defer type="text/javascript" src="/themes/vung/js/rating.js"></script>
     <script defer type="text/javascript" src="/themes/vung/js/episode.js"></script>
@@ -260,7 +262,7 @@
                     key: "{{ Setting::get('jwplayer_license') }}",
                     aspectratio: "16:9",
                     width: "100%",
-                    image: "{{ $currentMovie->getPosterUrl() }}",
+                    image: "/themes/vung/img/poster-default.webp",
                     file: link,
                     playbackRateControls: true,
                     playbackRates: [0.25, 0.75, 1, 1.25],
