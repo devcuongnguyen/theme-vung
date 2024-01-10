@@ -266,6 +266,12 @@
                     file: link,
                     playbackRateControls: true,
                     playbackRates: [0.25, 0.75, 1, 1.25],
+                    tracks: [{
+                        "kind": "captions",
+                        "file": "{{ Setting::get('jwplayer_sub_file_default') ?: '' }}",
+                        "label": "Default",
+                        default: true,
+                    }],
                     // sharing: {
                     //     sites: [
                     //         "reddit",
