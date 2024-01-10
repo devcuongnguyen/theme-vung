@@ -18,6 +18,10 @@ class ThemeVungServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/assets' => public_path('themes/vung')
         ], 'vung-assets');
+
+        $this->publishes([
+            __DIR__ . '/../resources/assets/img/favicon.ico' => public_path('favicon.ico')
+        ], 'vung-assets');
     }
 
     protected function setupDefaultThemeCustomizer()
