@@ -168,7 +168,7 @@
     <script src="/themes/vung/player/js/p2p-media-loader-core.min.js"></script>
     <script src="/themes/vung/player/js/p2p-media-loader-hlsjs.min.js"></script>
 
-    <script src="/js/jwplayer.js"></script>
+    <script src="/js/jwplayer-8.9.3.js"></script>
     <script src="/js/hls.min.js"></script>
     <script src="/js/jwplayer.hlsjs.min.js"></script>
 
